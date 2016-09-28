@@ -13,6 +13,9 @@
 		1729C1CE1D9B0FB700D6C836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1729C1CC1D9B0FB700D6C836 /* Main.storyboard */; };
 		1729C1D01D9B0FB700D6C836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1729C1CF1D9B0FB700D6C836 /* Assets.xcassets */; };
 		1729C1D31D9B0FB700D6C836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1729C1D11D9B0FB700D6C836 /* LaunchScreen.storyboard */; };
+		1729C1DC1D9B0FCB00D6C836 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1729C1DB1D9B0FCA00D6C836 /* Contacts.framework */; };
+		1729C1DE1D9B0FD500D6C836 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1729C1DD1D9B0FD500D6C836 /* AddressBook.framework */; };
+		1729C1E11D9B0FFE00D6C836 /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C1E01D9B0FFE00D6C836 /* ContactList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		1729C1CF1D9B0FB700D6C836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1729C1D21D9B0FB700D6C836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1729C1D41D9B0FB700D6C836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1729C1DB1D9B0FCA00D6C836 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		1729C1DD1D9B0FD500D6C836 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		1729C1DF1D9B0FFE00D6C836 /* ContactList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactList.h; sourceTree = "<group>"; };
+		1729C1E01D9B0FFE00D6C836 /* ContactList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1729C1DE1D9B0FD500D6C836 /* AddressBook.framework in Frameworks */,
+				1729C1DC1D9B0FCB00D6C836 /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			children = (
 				1729C1C21D9B0FB700D6C836 /* contacts001 */,
 				1729C1C11D9B0FB700D6C836 /* Products */,
+				1729C1DA1D9B0FCA00D6C836 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +73,8 @@
 				1729C1C91D9B0FB700D6C836 /* ViewController.h */,
 				1729C1CA1D9B0FB700D6C836 /* ViewController.m */,
 				1729C1CC1D9B0FB700D6C836 /* Main.storyboard */,
+				1729C1DF1D9B0FFE00D6C836 /* ContactList.h */,
+				1729C1E01D9B0FFE00D6C836 /* ContactList.m */,
 				1729C1CF1D9B0FB700D6C836 /* Assets.xcassets */,
 				1729C1D11D9B0FB700D6C836 /* LaunchScreen.storyboard */,
 				1729C1D41D9B0FB700D6C836 /* Info.plist */,
@@ -77,6 +89,15 @@
 				1729C1C41D9B0FB700D6C836 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1729C1DA1D9B0FCA00D6C836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1729C1DD1D9B0FD500D6C836 /* AddressBook.framework */,
+				1729C1DB1D9B0FCA00D6C836 /* Contacts.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1729C1E11D9B0FFE00D6C836 /* ContactList.m in Sources */,
 				1729C1CB1D9B0FB700D6C836 /* ViewController.m in Sources */,
 				1729C1C81D9B0FB700D6C836 /* AppDelegate.m in Sources */,
 				1729C1C51D9B0FB700D6C836 /* main.m in Sources */,

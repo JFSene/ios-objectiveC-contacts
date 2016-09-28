@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ContactList.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [[ContactList sharedContacts] fetchAllContacts]; //fetch all contacts by calling single to method
+    NSLog(@"Fetched Contact Details : %@",[[ContactList sharedContacts]totalPhoneNumberArray]);
+    
+    if ([[ContactList sharedContacts]totalPhoneNumberArray].count !=0) {
+        NSLog(@"Fetched Contact Details : %ld",[[ContactList sharedContacts]totalPhoneNumberArray].count);
+    }
+    //NSLog(@"Fetched Contact Details : %s",  [[ContactList sharedContacts] fetchAllContacts]);
+    
+    
 }
 
 
@@ -24,6 +34,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end
